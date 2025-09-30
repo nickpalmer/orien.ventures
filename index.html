@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orien Ventures - Personal coaching for weight loss, fitness, and empowerment. Achieve your goals with expert guidance and support.">
+    <title>Orien Ventures - Personal Coaching</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0a0e27;
+            --accent: #4f46e5;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a1f3a 100%);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 200px);
+            padding: 4rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent);
+            cursor: pointer;
+        }
+
+        .cta:hover {
+            background: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 5rem;
+            text-align: left;
+        }
+
+        .feature {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent);
+        }
+
+        .feature p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 5rem;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.25rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo/horizontal.jpeg" alt="Orien Ventures" class="logo-img">
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Transform Your Life</h1>
+                <p class="tagline">Personal coaching to help you achieve your goals in fitness, wellness, and personal empowerment</p>
+                <a href="#" class="cta" id="contact-btn">Start Your Journey</a>
+
+                <div class="features">
+                    <div class="feature">
+                        <h3>Weight Loss Coaching</h3>
+                        <p>Personalized strategies and accountability to help you reach and maintain your ideal weight through sustainable habits.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Fitness & Wellness</h3>
+                        <p>Build strength, increase energy, and develop a fitness routine that fits your lifestyle and keeps you motivated.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Personal Power</h3>
+                        <p>Unlock your potential, build confidence, and develop the mindset needed to achieve your most important goals.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Personal Transformation</h3>
+                        <p>Become the warrior you were meant to be, like Orion in the stars. Rebirth yourself like a phoenix rising from the ashes into your most powerful self.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Orien Ventures LLC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Email obfuscation to protect from harvesting bots
+        document.getElementById('contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Email parts stored separately and scrambled
+            const parts = [
+                'ventures',
+                'orien',
+                'nick',
+                '.',
+                '@'
+            ];
+            
+            // Reconstruct email: nick@orien.ventures
+            const email = parts[2] + parts[4] + parts[1] + parts[3] + parts[0];
+            
+            // Create mailto link
+            window.location.href = 'mailto:' + email;
+        });
+    </script>
+</body>
+</html>
